@@ -1,0 +1,44 @@
+/*css reset */
+*{
+    margin:0;
+    padding:0;
+}
+/*css variables*/
+:root{
+    --navbar-height:59px;
+    
+}
+/*navigation bar*/
+#navbar{
+    display:inline;
+    align-items: center;
+}
+/*Logo and Image*/
+#logo{
+    margin: 5px  4px;
+}
+#logo  img{
+    
+    margin: 3px  5px;
+}
+
+/*List Styling*/
+ #navbar ul{
+    display:flex;
+}
+ #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#navbar ul li{
+    /*color: white;*/
+    list-style: none;
+    font-style: 1.3rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}

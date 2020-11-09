@@ -1,0 +1,127 @@
+/*css reset */
+*{
+    margin:0;
+    padding:0;
+}
+/*css variables*/
+:root{
+    --navbar-height:59px;
+    
+}
+/*navigation bar*/
+#navbar{
+    display:flex;
+    align-items: center;
+}
+/*Logo and Image*/
+#logo{
+    margin: 5px  4px;
+}
+#logo  img{
+    
+    widows: 50px;
+    border: 3px solid purple;
+    border-radius: 50px;
+}
+
+/*List Styling*/
+#navbar{
+    position: relative;
+}
+ #navbar ul{
+    display:flex;
+    font-family: 'Bree Serif', serif;
+
+}
+ #navbar::before{
+    content: "";
+    background-color: violet;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /*color: white;*/
+    list-style: none;
+    font-style: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    
+}
+#navbar ul li a :hover{
+    color:white;
+    background-color: white;
+}
+/*home section*/
+#home{
+ display: flex;
+ flex-direction: column;
+ padding: 3px,200px;
+ height: 400px;
+ justify-content: center;
+ align-items: center;
+}
+#home::before{
+    content: "";
+    background-color: violet;
+    background:url('../233-2337836_healthy-food-wallpaper.jpg') no-repeat center center/cover ;
+    position: absolute;
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+    
+    #home h1{
+        color:  black;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+
+    }
+    #home p{
+        color:  black;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+
+    }
+    
+    /*utilty class*/
+    .h-primary{
+     font-size: 3.8rem;
+     padding:12px;
+        }
+        
+    .btn{
+        padding: 8px,25px;
+        border: 2px solid black;
+        background-color: yellowgreen;
+        color: black;
+        margin: 17px;
+        font: outline;
+        font-size: 1.5rem ;
+        font-family: 'Bree Serif', serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }  
+    .secRight{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 80%;
+        margin: auto;
+    } 
+    
+ 
+   
+   
+
